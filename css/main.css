@@ -1,0 +1,45 @@
+body {
+  background: #ddd;
+}
+
+body nav {
+  display: block;
+  clear: both;
+}
+
+/*
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+*/
+
+dl#team_bio {
+ width:100%;
+ overflow:hidden;
+/* background:#ff0;*/
+}
+
+dl#team_bio dt, dl#team_bio dd {
+ display: block;
+ margin-top: 1em;
+ margin-bottom: 1em; 
+}
+
+dl#team_bio dt {
+  clear: both;
+  float:left;
+  text-align: center;
+  width:20%; /* adjust the width; make sure the total of both is 100% */
+  min-width: 200px;
+  width: 200px;
+/* background:#cc0;*/
+}
+dl#team_bio dd {
+ float:right;
+ width:80%; /* adjust the width; make sure the total of both is 100% */
+/* background:#dd0*/
+}
