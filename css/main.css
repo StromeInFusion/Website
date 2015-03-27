@@ -1,45 +1,39 @@
 body {
-  background: #ddd;
+  font-family: Arial, sans-serif;
 }
 
-body nav {
-  display: block;
-  clear: both;
+.cross{
+    color:red;
+    font-size:30px;
+}
+.check {
+    color:green;
+    font-size:20px;
 }
 
-/*
-dl {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
+a {
+    color: #000000;
+    text-decoration: underline;
 }
-*/
-
-dl#team_bio {
- width:100%;
- overflow:hidden;
-/* background:#ff0;*/
+a:hover {
+    color: #3e3f3a;
+    text-decoration: none;
 }
 
-dl#team_bio dt, dl#team_bio dd {
- display: block;
- margin-top: 1em;
- margin-bottom: 1em; 
+.navbar a, a.btn {
+    text-decoration: none;
 }
 
-dl#team_bio dt {
-  clear: both;
-  float:left;
-  text-align: center;
-  width:20%; /* adjust the width; make sure the total of both is 100% */
-  min-width: 200px;
-  width: 200px;
-/* background:#cc0;*/
+.rotate90 {
+    -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+    -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+    -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
+    filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
 }
-dl#team_bio dd {
- float:right;
- width:80%; /* adjust the width; make sure the total of both is 100% */
-/* background:#dd0*/
+
+td.left-header {
+    vertical-align: middle !important;
+    text-align: center;
+    font-weight: bold;
 }

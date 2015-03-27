@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>EC-CONNECT - CS410 (Black)</title>
+
+    <link rel="stylesheet" href="css/bootstrap-dark.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">CS410 - Team Black</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="competition.html">Competition</a></li>
+                <li><a href="risks.html">Risks</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Fixed navbar -->
+
+<!-- Content Container -->
+<div class="container">
+    <br/>
+    <br/>
+    <br/>
+
+    <div>
+        <h1>Risk Matrix</h1>
+        <hr>
+        <table style="width:100%;">
+            <tbody>
+            <tr>
+                <td style="width: 60px;"></td>
+                <td style="font-weight:bold;text-align:right;padding-bottom: 10px;">Impact</td>
+            </tr>
+            <tr>
+                <td style="border: none; vertical-align:bottom;">
+                    <div class="rotate90"
+                         style="font-weight:bold;margin-bottom: 65px;margin-left: -20px;margin-right: -30px;">
+                        Probability
+                    </div>
+                </td>
+                <td>
+                    <div class="">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <th class="col-xs-1"></th>
+                                <th style="text-align:center" class="col-sm-2">1</th>
+                                <th style="text-align:center" class="col-sm-2">2</th>
+                                <th style="text-align:center" class="col-sm-2">3</th>
+                                <th style="text-align:center" class="col-sm-2">4</th>
+                                <th style="text-align:center" class="col-sm-2">5</th>
+                            </tr>
+                            <tr>
+                                <td class="left-header">5</td>
+                                <td align="center" class="warning"></td>
+                                <td align="center" class="warning"></td>
+                                <td align="center" class="danger"></td>
+                                <td align="center" class="danger"></td>
+                                <td align="center" class="danger"></td>
+                            </tr>
+                            <tr>
+                                <td class="left-header">4</td>
+                                <td align="center" class="warning"></td>
+                                <td align="center" class="warning"></td>
+                                <td align="center" class="warning"></td>
+                                <td align="center" class="danger"></td>
+                                <td align="center" class="danger"><a class="btn btn-danger btn-s" href="#t3">T3</a></td>
+                            </tr>
+                            <tr>
+                                <td class="left-header">3</td>
+                                <td align="center" class="success"><a class="btn btn-success btn-s" href="#t1">T1</a></td>
+                                <td align="center" class="warning"><a class="btn btn-warning btn-s" href="#t5">T5</a></td>
+                                <td align="center" class="warning"></td>
+                                <td align="center" class="warning"><a class="btn btn-warning btn-s" href="#t4">T4</a></td>
+                                <td align="center" class="danger"></td>
+                            </tr>
+                            <tr>
+                                <td class="left-header">2</td>
+                                <td align="center" class="success"></td>
+                                <td align="center" class="success"></td>
+                                <td align="center" class="warning"></td>
+                                <td align="center" class="warning"><a class="btn btn-warning btn-s" href="#c3">C3</a></td>
+                                <td align="center" class="warning"><a class="btn btn-warning btn-s" href="#c1">C1</a></td>
+                            </tr>
+                            <tr>
+                                <td class="left-header">1</td>
+                                <td align="center" class="success"></td>
+                                <td align="center" class="success"></td>
+                                <td align="center" class="success"><a class="btn btn-success btn-s" href="#t2">T2</a></td>
+                                <td align="center" class="warning"></td>
+                                <td align="center" class="warning"><a class="btn btn-warning btn-s" href="#c2">C2</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <h2>Customer Risks</h2>
+
+        <div>
+            <div>
+                <a name="c1"></a>
+                <h4>C1: Incorrect Usage</h4>
+                <ul>
+                    <li>Description: End user has trouble working through the use of the solution.</li>
+                    <li>Probability: 2</li>
+                    <li>Impact: 5</li>
+                    <li>Mitigation: Simple interface with thorough pre-launch testing.</li>
+                </ul>
+            </div>
+            <div>
+                <a name="c2"></a>
+                <h4>C2: Advertising</h4>
+                <ul>
+                    <li>Description: If the end user is not able to locate the solution then then the project is moot. </li>
+                    <li>Probability: 1</li>
+                    <li>Impact: 5</li>
+                    <li>Mitigation: Mentor involvement deployment</li>
+                </ul>
+            </div>
+            <div>
+                <a name="c3"></a>
+                <h4>C3: Customer dislikes the solution</h4>
+                <ul>
+                    <li>Description: If the customer dislikes the solution it will not be used.</li>
+                    <li>Probability: 2</li>
+                    <li>Impact: 4</li>
+                    <li>Mitigation: Mentor involvement during development</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Technical Risks</h2>
+
+        <div>
+            <div>
+                <a name="t1"></a>
+                <h4>T1: Flexibility</h4>
+                <ul>
+                    <li>Description: Is the application able to be used beyond ODU?</li>
+                    <li>Probability: 3</li>
+                    <li>Impact: 1</li>
+                    <li>Mitigation: Design the system such that it can be easily adapted to other universities.</li>
+                </ul>
+            </div>
+            <div>
+                <a name="t2"></a>
+                <h4>T2: Performance</h4>
+                <ul>
+                    <li>Description: Users may be discouraged from using the solution if the service is slow.</li>
+                    <li>Probability: 1</li>
+                    <li>Impact: 3</li>
+                    <li>Mitigation: Performance testing during development and optimization.</li>
+                </ul>
+            </div>
+            <div>
+                <a name="t3"></a>
+                <h4>T3: Security</h4>
+                <ul>
+                    <li>Description: Protect data of end users who signup from malicious users.</li>
+                    <li>Probability: 4</li>
+                    <li>Impact: 5</li>
+                    <li>Mitigation: Follow best practices during development</li>
+                </ul>
+            </div>
+            <div>
+                <a name="t4"></a>
+                <h4>T4: Data Privacy</h4>
+                <ul>
+                    <li>Description: Protect users data from unauthorized access.</li>
+                    <li>Probability: 3</li>
+                    <li>Impact: 4</li>
+                    <li>Mitigation: Review access restrictions with mentor during development</li>
+                </ul>
+            </div>
+            <div>
+                <a name="t5"></a>
+                <h4>T5: Maintainability</h4>
+                <ul>
+                    <li>Description: The solution should be maintainable by other developers.</li>
+                    <li>Probability: 3</li>
+                    <li>Impact: 2</li>
+                    <li>Mitigation: The system should incorporate best practices and existing frameworks to avoid learning overhead.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
