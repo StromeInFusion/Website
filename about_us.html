@@ -1,154 +1,115 @@
 <!doctype html>
-<html ng-app>
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>CS410 (Black)</title>
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>-->
-    <script src="js/angular.min.js"></script>
-
-    <!-- Bootstrap core CSS -->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">-->
+    <title>EC-CONNECT - CS410 (Black)</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-
-    <!-- Custom styles for this template -->
-    <link href="navbar-fixed-top.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!--
-    <style type="text/css">
-      .navbar-default .navbar-nav .active a,
-      .navbar-default .navbar-nav .active a:focus,
-      .navbar-default .navbar-nav .active a:hover {
-        color: #555;
-        background-color: #aaa;
-      }
-
-      .navbar-default {
-        background-color: #000;
-        border-color: #7e7e7e;
-      }
-    </style>
--->
-
     <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+</head>
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">CS410 - Team Black</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">CS410 - Team Black</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-<!--
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
--->
-          <ul class="nav navbar-nav navbar-right">
-			<li><a href="index.html">Home</a></li>
-            <li><a href="solution.html">Solution</a></li>
-            <li><a href="competition.html">Competition</a></li>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="resources.html">Resources</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="competition.html">Competition</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Fixed navbar -->
 
-    <div class="container">
+<!-- Content Container -->
+<div class="container">
     <br/>
     <br/>
     <br/>
-<!--
-    <br/>
+
     <div>
-      <label>Name:</label>
-        <input type="text" ng-model="yourName" placeholder="Enter a name here">
-        <hr>
-        <h1>Hello {{yourName}}!</h1>
+        <a id="about"></a>
+
+        <h1>About us</h1>
+        <dl id="team_bio">
+            <dt>Nancy Grden<br/><img src="media/bio-nancy_grden.jpg" width="125px"/></dt>
+            <dd><p>Team Mentor</p>
+
+                <p>Nancy L. Grden, general manager for Genomind and a long-time entrepreneur, has been hired as the
+                    first executive director for the Strome Entrepreneurial Center, beginning in January.</p>
+
+                <p>Grden, a strong supporter of Old Dominion University and its efforts to create a campus-wide
+                    entrepreneurial culture, previously served as chair of the Executive Advisory Council for Old
+                    Dominion's Strome College of Business, and was appointed to the Board of Trustees of the ODU
+                    Educational Foundation.</p></dd>
+            <dt>Christopher "Chris" Bliss<br/><img src="media/bio-chris_bliss.jpg" width="125px"/></dt>
+            <dd><p>Favourite colour is green. I do indeed spell words with the old 'ou' instead of the new age 'o'. I
+                also prefer 'grey' over 'gray'. I enjoy cold days in doors with a glass of whiskey and good literature.
+                Warm days indoors with rum and a good book. I like art, photography and newer glitching. Stage plays,
+                operas, punk concerts, and tattoos. And if I know they got pocket aces and they value bet me in, any
+                hand is good.</p></dd>
+            <dt>Shawn Casey<br/><img src="media/bio-shawn_casey.jpg" width="125px"/></dt>
+            <dd><p>Howdy y'all! My name is Shawn Casey. I am a Computer Science major. This is one of the last few
+                classes required for graduation for me so I'm excited to be finishing up. I'm looking forward to having
+                a more hands on experience on how the things we've learned thus far are applied in real world working
+                environments. I am not currently employed and haven't been for 3 years, but am ready to start working
+                again. Out of high school I worked for a high end cabinetry company doing all their design work on CAD.
+                When the economy crashed so did my field. I've also done a good bit of masonry work and started a stone
+                masonry company. My most recent job was doing graphic arts and web upkeep for a Carhartt distributor. I
+                am from the Raleigh area but have lived in Al Ain (an hour south of Dubai) since August 2012. My wife is
+                a teacher out here and I'm a stay-at-home father and student (hence not working for almost 3 years).
+                Looking forward to this class!</p></dd>
+            <dt>Patrick Ferate<br/><img src="media/bio-pat_ferate.jpg" width="125px"/></dt>
+            <dd><p>My name is Pat Ferate and I am a distance learning student from Washington State. I've been working
+                as a System Engineer for Northrop Grumman for 4 years. Before that I was a System Administrator and
+                Developer for a small private company for 7 years. I have experience in a wide range of technologies,
+                but I love working with Linux and Python.</p>
+
+                <p>I have 3 daughters (1, 4, and 6) to keep me plenty busy. I love listening to independent hip-hop
+                    music. I also contribute to a few open source projects and have some personal software projects that
+                    I've been working off and on for a while.</p></dd>
+            <dt>Matthew Payne<br/><img src="media/bio-matthew_payne.jpg" width="125px"/></dt>
+            <dd><p>My name is Matthew Payne. I'm a Computer Science major in my senior year of study. I'm taking this
+                course as a part of my required curriculum and hope it helps me in my future endeavors as a software
+                engineer in knowing how to present a product I want to pitch to someone. I'm currently working part time
+                as a knife salesman. I enjoy playing video games, watching shows, and reading comics. I'm a pretty
+                stereotypical nerd to say the least. Either way I hope this is a good semester, and I hope to do well in
+                this class.</p></dd>
+            <dt>John Spaetzel<br/><img src="media/bio-john_spaetzel.jpg" width="125px"/></dt>
+            <dd><p>I'm hoping to gain more hands on experience with the project/development lifecycle, particularly more
+                insight into the planning phases of a new project.
+                I am currently employed as a junior software engineer with Outsite Networks in Norfolk, VA. I work with
+                C#, T-SQL, and related technologies for our customer loyalty services. I previously worked at
+                InMotionHosting as an expert support technician, I provided front line support for our unix based
+                services primarily related to website hosting.</p></dd>
+            <dt>Will Strong<br/><img src="media/bio_picture_wstrong.jpg" width="125px"/></dt>
+            <dd><p>My name is William Strong and I’m a CS undergraduate student. I’m taking this class to meet the
+                requirements for my degree. I’m currently employed at HRSD as a programmer analyst. I mostly work on
+                systems integration, but do some application development from time to time. Before HRSD I worked as a
+                programmer at Amerigroup (which was bought out by Well Point) doing application and report development.
+                In my spare time (for which I have little of) I like to spend with my wife and kids and attempting to
+                play the guitar.</p></dd>
+        </dl>
     </div>
--->
-    <div>
-      <a id="about"></a>
-      <h1>About us</h1>
-      <dl id="team_bio">
-        <dt>Nancy Grden<br/><img src="media/bio-nancy_grden.jpg" width="125px"/></dt>
-        <dd><p>Team Mentor</p>
-        <p>Nancy L. Grden, general manager for Genomind and a long-time entrepreneur, has been hired as the first executive director for the Strome Entrepreneurial Center, beginning in January.</p><p>Grden, a strong supporter of Old Dominion University and its efforts to create a campus-wide entrepreneurial culture, previously served as chair of the Executive Advisory Council for Old Dominion's Strome College of Business, and was appointed to the Board of Trustees of the ODU Educational Foundation.</p></dd>
-        <dt>Christopher "Chris" Bliss<br/><img src="media/bio-chris_bliss.jpg" width="125px"/></dt>
-        <dd><p>Favourite colour is green. I do indeed spell words with the old 'ou' instead of the new age 'o'. I also prefer 'grey' over 'gray'. I enjoy cold days in doors with a glass of whiskey and good literature. Warm days indoors with rum and a good book. I like art, photography and newer glitching. Stage plays, operas, punk concerts, and tattoos. And if I know they got pocket aces and they value bet me in, any hand is good.</p></dd>
-        <dt>Shawn Casey<br/><img src="media/bio-shawn_casey.jpg" width="125px"/></dt>
-        <dd><p>Howdy y'all! My name is Shawn Casey. I am a Computer Science major. This is one of the last few classes required for graduation for me so I'm excited to be finishing up. I'm looking forward to having a more hands on experience on how the things we've learned thus far are applied in real world working environments. I am not currently employed and haven't been for 3 years, but am ready to start working again. Out of high school I worked for a high end cabinetry company doing all their design work on CAD. When the economy crashed so did my field. I've also done a good bit of masonry work and started a stone masonry company. My most recent job was doing graphic arts and web upkeep for a Carhartt distributor. I am from the Raleigh area but have lived in Al Ain (an hour south of Dubai) since August 2012. My wife is a teacher out here and I'm a stay-at-home father and student (hence not working for almost 3 years). Looking forward to this class!</p></dd>
-        <dt>Patrick Ferate<br/><img src="media/bio-pat_ferate.jpg" width="125px"/></dt>
-        <dd><p>My name is Pat Ferate and I am a distance learning student from Washington State.  I've been working as a System Engineer for Northrop Grumman for 4 years.  Before that I was a System Administrator and Developer for a small private company for 7 years.  I have experience in a wide range of technologies, but I love working with Linux and Python.</p>
-<p>I have 3 daughters (1, 4, and 6) to keep me plenty busy.  I love listening to independent hip-hop music.  I also contribute to a few open source projects and have some personal software projects that I've been working off and on for a while.</p></dd>
-        <dt>Matthew Payne<br/><img src="media/bio-matthew_payne.jpg" width="125px"/></dt>
-        <dd><p>My name is Matthew Payne. I'm a Computer Science major in my senior year of study. I'm taking this course as a part of my required curriculum and hope it helps me in my future endeavors as a software engineer in knowing how to present a product I want to pitch to someone. I'm currently working part time as a knife salesman. I enjoy playing video games, watching shows, and reading comics. I'm a pretty stereotypical nerd to say the least. Either way I hope this is a good semester, and I hope to do well in this class.</p></dd>
-        <dt>John Spaetzel<br/><img src="media/bio-john_spaetzel.jpg" width="125px"/></dt>
-        <dd><p>I'm hoping to gain more hands on experience with the project/development lifecycle, particularly more insight into the planning phases of a new project.
-I am currently employed as a junior software engineer with Outsite Networks in Norfolk, VA. I work with C#, T-SQL, and related technologies for our customer loyalty services. I previously worked at InMotionHosting as an expert support technician, I provided front line support for our unix based services primarily related to website hosting.</p></dd>
-        <dt>Will Strong<br/><img src="media/bio_picture_wstrong.jpg" width="125px"/></dt>
-        <dd><p>My name is William Strong and I’m a CS undergraduate student.  I’m taking this class to meet the requirements for my degree.  I’m currently employed at HRSD as a programmer analyst.  I mostly work on systems integration, but do some application development from time to time.  Before HRSD I worked as a programmer at Amerigroup (which was bought out by Well Point) doing application and report development.  In my spare time (for which I have little of) I like to spend with my wife and kids and attempting to play the guitar.</p></dd>
-      </dl>
-<!--
-      <ul>
-        <li>Christopher Bliss</li>
-        <li>Shawn Casey</li>
-        <li>Patrick Ferate</li>
-        <li>Matthew Payne</li>
-        <li>John Spaetzel</li>
-        <li>Will Strong</li>
-      </ul>
--->
-    </div>
-    </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-<!--
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
--->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-	$(".nav a").on("click", function() {
-		$(".nav").find(".active").removeClass("active");
-		$(this).parent().addClass("active");
-	});
-    </script>
-  </body>
+</div>
+<!-- End Content Container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
 </html>
