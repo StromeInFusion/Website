@@ -3,3 +3,6 @@
 # Composer Files
 composer.lock
 vendor/
+
+# Smarty Template Cache
+templates/compile/
