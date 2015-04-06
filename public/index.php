@@ -14,6 +14,10 @@ if ($_SERVER['APPLICATION_ENV'] == 'development') {
 define('BASE_DIR', dirname(__DIR__));
 chdir(BASE_DIR);
 
+/*
+ * TODO: We should check for the existence of 'vendor/autoload.php'
+ *       If it doesn't exists, then it probably means composer hasn't installed dependencies.
+ */
 require_once('vendor/autoload.php');
 require_once('config/site_config.php');
 require_once('lib/utils/routing.php');
@@ -34,7 +38,13 @@ $route_table = [''             => 'index.phtml',
                 '404'          => '404.phtml',
 ];
 
-$raw_path_hash = path2hash($_SERVER['REQUEST_URI']);
+if (URL_BASE) {
+    $server_uri = str_replace(URL_BASE, '', $_SERVER['REQUEST_URI']);
+} else {
+    $server_uri = $_SERVER['REQUEST_URI'];
+}
+
+$raw_path_hash = path2hash($server_uri);
 $action = $raw_path_hash[0];
 $path_hash = $raw_path_hash[1];
 
@@ -48,10 +58,10 @@ $content = file_get_contents($content_dir.'/'.$content_file);
 
 if (!$content) {
     /*
-    We'd probably want this to send a notification to the developers/system admins here.
-    This means that an entry is in the route table, but the content file is either empty or
-    doesn't exist.  We can do more checks to narrow it down, but this will work for now.
-    */
+     * We'd probably want this to send a notification to the developers/system admins here.
+     * This means that an entry is in the route table, but the content file is either empty or
+     * doesn't exist.  We can do more checks to narrow it down, but this will work for now.
+     */
     throw new ErrorException('File not configured.  Please contact your system administrator.');
 }
 
