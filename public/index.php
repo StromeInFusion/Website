@@ -38,8 +38,8 @@ $route_table = [''             => 'index.phtml',
                 '404'          => '404.phtml',
 ];
 
-if (URL_BASE) {
-    $server_uri = str_replace(URL_BASE, '', $_SERVER['REQUEST_URI']);
+if (Config::URL_BASE) {
+    $server_uri = str_replace(Config::URL_BASE, '', $_SERVER['REQUEST_URI']);
 } else {
     $server_uri = $_SERVER['REQUEST_URI'];
 }
