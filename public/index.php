@@ -1,3 +1,5 @@
+<?php
+$content = <<<EOF
 <!-- Content Container -->
 <div class="container">
     <br/>
@@ -55,3 +57,5 @@
     </div>
 </div>
 <!-- End Content Container -->
+EOF;
+require_once('display.php');

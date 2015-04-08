@@ -14,12 +14,12 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{$CONFIG.URL_BASE}/">Home</a></li>
-                <li><a href="{$CONFIG.URL_BASE}/solution">Solution</a></li>
-                <li><a href="{$CONFIG.URL_BASE}/competition">Competition</a></li>
-                <li><a href="{$CONFIG.URL_BASE}/risks">Risks</a></li>
-                <li><a href="{$CONFIG.URL_BASE}/user_stories">User Stories</a></li>
-                <li><a href="{$CONFIG.URL_BASE}/about_us">About Us</a></li>
-                <li><a href="{$CONFIG.URL_BASE}/resources">Resources</a></li>
+                <li><a href="{$CONFIG.URL_BASE}/solution.php">Solution</a></li>
+                <li><a href="{$CONFIG.URL_BASE}/competition.php">Competition</a></li>
+                <li><a href="{$CONFIG.URL_BASE}/risks.php">Risks</a></li>
+                <li><a href="{$CONFIG.URL_BASE}/user_stories.php">User Stories</a></li>
+                <li><a href="{$CONFIG.URL_BASE}/about_us.php">About Us</a></li>
+                <li><a href="{$CONFIG.URL_BASE}/resources.php">Resources</a></li>
             </ul>
         </div>
     </div>
