@@ -1,79 +1,57 @@
-<?php
-/**
- * Display all errors when APPLICATION_ENV is development.
- */
-if ($_SERVER['APPLICATION_ENV'] == 'development') {
-    error_reporting(E_ALL);
-    ini_set("display_errors", 1);
-}
+<!-- Content Container -->
+<div class="container">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-lg-12 text-center jumbotron">
+            <h1>Entrepreneurial Center Connect</h1>
+        </div>
+    </div>
 
-/**
- * This makes our life easier when dealing with paths. Everything is relative
- * to the application root now.
- */
-define('BASE_DIR', dirname(__DIR__));
-chdir(BASE_DIR);
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 text-center">
+            <h2>Problem Statement</h2>
+            <h3>Entrepreneurial Centers lack a customized tool for attaining their outreach goals.</h3>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+         <div class="col-lg-12">
+             <h2>Deliverables</h2>
 
-/*
- * TODO: We should check for the existence of 'vendor/autoload.php'
- *       If it doesn't exists, then it probably means composer hasn't installed dependencies.
- */
-require_once('vendor/autoload.php');
-require_once('config/site_config.php');
-require_once('lib/utils/routing.php');
+             <div class="well">
+                 <h3>Feasibility Presentation</h3>
+                <iframe src="https://onedrive.live.com/embed?cid=4EC6F1CC8BDBDF18&resid=4EC6F1CC8BDBDF18%211294&authkey=AABTfG0CYz4AW64&em=2"
+                width="402" height="327" frameborder="0" scrolling="no"></iframe>
+             </div>
+             <div class="well">
+                 <h3>Current Process</h3>
+                 <img src="media/current_process_flow_v4.png">
+             </div>
+             <div class="well">
+                 <h3>Problem Characteristics</h3>
+                 <ul>
+                    <li>Students do not register with S.E.C. because of overwhelming registration process</li>
+                    <li>Student projects and/or resources are not tracked</li>
+                    <li>Students are not able to connect with other students and/or resources</li>
+                    <li>Students are not aware of S.E.C. activities and/or events</li>
+                    <li>Student visits to the S.E.C. are not logged</li>
+                    <li>Students do not know how to ask for what they need</li>
+                    <li>Students are too afraid to ask for what they need</li>
+                </ul>
+             </div>
+             <hr>
+        </div>
+    </div>
 
-$smarty = new Smarty();
-$smarty->template_dir = 'templates/';
-$smarty->compile_dir = 'templates/compile/';
+    <div>
+        <h1></h1>
 
-$content_dir = BASE_DIR.'/data/content';
-$route_table = [''             => 'index.phtml',
-                'index'        => 'index.phtml',
-                'about_us'     => 'about_us.phtml',
-                'competition'  => 'competition.phtml',
-                'resources'    => 'resources.phtml',
-                'risks'        => 'risks.phtml',
-                'solution'     => 'solution.phtml',
-                'user_stories' => 'user_stories.phtml',
-                '404'          => '404.phtml',
-];
+        <h3>
 
-if (Config::URL_BASE) {
-    $server_uri = str_replace(Config::URL_BASE, '', $_SERVER['REQUEST_URI']);
-} else {
-    $server_uri = $_SERVER['REQUEST_URI'];
-}
-
-$raw_path_hash = path2hash($server_uri);
-$action = $raw_path_hash[0];
-$path_hash = $raw_path_hash[1];
-
-if (array_key_exists($action, $route_table)) {
-    $content_file = $route_table[$action];
-} else {
-    $content_file = $route_table['404'];
-}
-
-$content = file_get_contents($content_dir.'/'.$content_file);
-
-if (!$content) {
-    /*
-     * We'd probably want this to send a notification to the developers/system admins here.
-     * This means that an entry is in the route table, but the content file is either empty or
-     * doesn't exist.  We can do more checks to narrow it down, but this will work for now.
-     */
-    throw new ErrorException('File not configured.  Please contact your system administrator.');
-}
-
-//$smarty->assign('title_text', 'TITLE: This is the Smarty basic example ...');
-$smarty->assign('body_html', $content);
-
-
-/**
- *  Assigning site configurations
- */
-$rc = new ReflectionClass('Config');
-$config_array = $rc->getConstants();
-$smarty->assign('CONFIG', $config_array);
-
-$smarty->display('index.tpl');
+        </h3>
+    </div>
+</div>
+<!-- End Content Container -->
