@@ -15,9 +15,12 @@ define('BASE_DIR', dirname(__DIR__));
 chdir(BASE_DIR);
 
 /*
- * TODO: We should check for the existence of 'vendor/autoload.php'
- *       If it doesn't exists, then it probably means composer hasn't installed dependencies.
+ *  If it doesn't exists, then it probably means composer hasn't installed dependencies.
  */
+if (!file_exists('vendor/autoload.php')) {
+    http_response_code(520);
+    die('ERROR: The application is missing needed libraries.  Install Composer requirements.');
+}
 require_once('vendor/autoload.php');
 require_once('config/site_config.php');
 
