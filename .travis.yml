@@ -4,4 +4,4 @@ php:
 script: 
  - echo Hello
 after_success:
-  - find ./ -name '.git' -prune -o ! -name '.travis.yml' ! -name 'README.md' -mindepth 1 -printf '%P' -type f -exec curl --ftp-create-dirs -T {} -u $FTPUser:$FTPPass ftp://ftp.cs.odu.edu/public_html/{} \;
+  - find ./ -name '.git' -prune -o ! -name '.travis.yml' ! -name 'README.md' -mindepth 1 -printf '%P' -type f -exec curl --ftp-create-dirs -T {} -u $FTPUser:$FTPPassword ftp://ftp.cs.odu.edu/public_html/{} \;
