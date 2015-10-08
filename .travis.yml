@@ -1,0 +1,5 @@
+language: php
+php:
+  - 5.5
+script:
+- find ./ -mindepth 1 -printf '%P' -type f -exec curl --ftp-create-dirs -T {} -u $FTPUser:$FTPPass ftp://$FTPHost/public_html{} \;
