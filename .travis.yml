@@ -4,6 +4,6 @@ php:
 script: 
  - echo Deploying
 after_success:
-  - find ./ -name '.git' -prune -o ! -name '.travis.yml' ! -name 'README.md' -mindepth 1 -printf '%P' -type f -exec curl -v --disable-epsv --ftp-create-dirs -T {} -u $FTPUser:$FTPPassword ftp://ftp.cs.odu.edu/public_html/{} \;
+  - find ./ -name '.git' -prune -o ! -name '.travis.yml' ! -name 'README.md' -mindepth 1 -printf '%P' -type f -exec curl --ftp-create-dirs -T {} -u $FTPUser:$FTPPassword ftp://ftp.cs.odu.edu/public_html/{} \;
 notifications:
   slack: cs410black:gaAszJPgmA7Qvu3w1taIGQMf
