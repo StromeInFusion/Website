@@ -1,11 +1,8 @@
 language: php
 php:
   - 5.5
-addons:
-  ssh_known_hosts: atria.cs.odu.edu
-  apt:
-    packages:
-      - sshpass
+before_script:
+  - sudo apt-get install -qq sshpass
 script: 
  - echo Deploying
 after_success:
