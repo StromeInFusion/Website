@@ -7,6 +7,6 @@ addons:
       - sshpass
   ssh_known_hosts: atria.cs.odu.edu
 script:
- - sshpass -p ${FTPPassword} rsync --exclude .git --exclude .gitignore --exclude .travis.yml --stats -avz -e ssh ${TRAVIS_BUILD_DIR}/ ${FTPUser}@atria.cs.odu.edu:~/public_html/
+ - sshpass -p ${FTPPassword} rsync -rvc --delete --stats --exclude .git --exclude .gitignore --exclude .travis.yml -e ssh ${TRAVIS_BUILD_DIR}/ ${FTPUser}@atria.cs.odu.edu:~/public_html/
 notifications:
   slack: cs410black:gaAszJPgmA7Qvu3w1taIGQMf
