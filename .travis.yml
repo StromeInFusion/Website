@@ -1,11 +1,9 @@
 language: php
 php:
   - 5.5
-before_script:
-  - sudo apt-get install -qq sshpass
 script: 
  - echo Deploying
 after_success:
-  - sshpass -p '$FTPPassword' rsync --progress -avz -e ssh ~/Test/ $FTPUser@atria.cs.odu.edu:~/public_html/ 
+  - find ./ -name '.git' -prune -o ! -name '.travis.yml' ! -name 'README.md' -mindepth 1 -printf '%P' -type f -exec curl --ftp-create-dirs -T {} -u $FTPUser:$FTPPassword ftp://ftp.cs.odu.edu/public_html/{} \;
 notifications:
   slack: cs410black:gaAszJPgmA7Qvu3w1taIGQMf
