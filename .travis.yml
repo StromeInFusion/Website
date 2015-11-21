@@ -6,7 +6,7 @@ addons:
     packages:
       - sshpass
   ssh_known_hosts: atria.cs.odu.edu
-script: 
- - sshpass -p '${FTPPassword}' rsync --progress -avz -e ssh $TRAVIS_BUILD_DIR/ ${FTPUser}@atria.cs.odu.edu:~/public_html/
+script:
+ - sshpass -p ${FTPPassword} rsync --progress -avz -e ssh ${TRAVIS_BUILD_DIR}/ ${FTPUser}@atria.cs.odu.edu:~/public_html/
 notifications:
   slack: cs410black:gaAszJPgmA7Qvu3w1taIGQMf
